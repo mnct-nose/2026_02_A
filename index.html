@@ -19,54 +19,75 @@
     <main class="container">
         
         <section class="data-section">
-            <h2>1. 各国のサッカー関心層と国内順位</h2>
-            <p class="section-desc">ワールドカップなどの国際大会で常に上位に位置する国々は、国内におけるサッカーの注目度が圧倒的です。</p>
-            
-            <div class="table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>国名</th>
-                            <th>サッカー関心層割合</th>
-                            <th>国内人気順位</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>メキシコ</td>
-                            <td>63〜64%</td>
-                            <td>1位 (サッカー)</td>
-                        </tr>
-                        <tr>
-                            <td>スペイン</td>
-                            <td>57%</td>
-                            <td>1位 (サッカー)</td>
-                        </tr>
-                        <tr>
-                            <td>イタリア</td>
-                            <td>57%</td>
-                            <td>1位 (サッカー)</td>
-                        </tr>
-                        <tr>
-                            <td>イギリス</td>
-                            <td>52%</td>
-                            <td>1位 (サッカー)</td>
-                        </tr>
-                        <tr>
-                            <td>ドイツ</td>
-                            <td>51%</td>
-                            <td>1位 (サッカー)</td>
-                        </tr>
-                        <tr>
-                            <td>フランス</td>
-                            <td>43%</td>
-                            <td>1位 (サッカー)</td>
-                        </tr>
-                    </tbody>
-                </table>
+    <h2>2. 日常的な「熱狂」を支えるスタジアム動員数</h2>
+    <p class="section-desc">欧州主要リーグでは、1試合平均で数万人規模の観客がスタジアムに足を運んでいます。（カードを押すと裏面の詳細データが見られます）</p>
+    
+    <div class="grid">
+        <div class="card" onclick="this.classList.toggle('flipped')">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>ドイツ（ブンデスリーガ）</h3>
+                    <p class="stat">42,997 人</p>
+                    <p class="card-desc">1試合平均観客数。タップして詳細を競合比較。</p>
+                </div>
+                <div class="card-back">
+                    <h3>最多動員クラブ</h3>
+                    <p class="club-name">ドルトムント</p>
+                    <p class="stat-sub">平均 81,228 人</p>
+                    <p class="card-desc">世界トップクラスの圧倒的な動員力を誇るスタジアムです。</p>
+                </div>
             </div>
-            <p class="caption">※データから、ワールドカップの優勝候補常連国（スペイン、イタリア、ドイツ、フランスなど）はいずれもサッカーが国内人気1位であり、人口の約半数以上が強い関心を寄せていることが分かります。</p>
-        </section>
+        </div>
+
+        <div class="card" onclick="this.classList.toggle('flipped')">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>イングランド</h3>
+                    <p class="stat">40,236 人</p>
+                    <p class="card-desc">世界最高峰のプレミアリーグ。タップして詳細を表示。</p>
+                </div>
+                <div class="card-back">
+                    <h3>最多動員クラブ</h3>
+                    <p class="club-name">マンチェスター・U</p>
+                    <p class="stat-sub">平均 73,671 人</p>
+                    <p class="card-desc">伝統あるオールド・トラッフォードに毎試合大観衆が集まります。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="this.classList.toggle('flipped')">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>イタリア（セリエA）</h3>
+                    <p class="stat">29,551 人</p>
+                    <p class="card-desc">戦術の国。タップして詳細を表示。</p>
+                </div>
+                <div class="card-back">
+                    <h3>最多動員クラブ</h3>
+                    <p class="club-name">インテル</p>
+                    <p class="stat-sub">平均 72,630 人</p>
+                    <p class="card-desc">ミラノの熱狂的なサポーターがスタジアムを埋め尽くします。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="this.classList.toggle('flipped')">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>スペイン（ラ・リーガ）</h3>
+                    <p class="stat">29,488 人</p>
+                    <p class="card-desc">技術水準が極めて高いリーグ。タップして詳細を表示。</p>
+                </div>
+                <div class="back-text card-back">
+                    <h3>最多動員クラブ</h3>
+                    <p class="club-name">バルセロナ</p>
+                    <p class="stat-sub">平均 83,415 人</p>
+                    <p class="card-desc">巨大なスタジアムを持ち、リーグ1位の動員数を記録。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         <section class="data-section">
             <h2>2. 日常的な「熱狂」を支えるスタジアム動員数</h2>
@@ -99,7 +120,7 @@
         <section class="summary-section">
             <h2>結論：観戦人口の厚みが「強さ」を育てる</h2>
             <div class="summary-content">
-                <p>世界全体のサッカーファン人口は<strong>35億人（全人類の51%）</strong>に達しており、まさに世界最大のスポーツです。データが示す通り、ワールドカップで優勝を争うような強豪国（アルゼンチン、ブラジル、欧州各国）は、以下のような共通の土壌を持っています。</p>
+                <p>世界全体のサッカーファン人口は<strong>35億人</strong>に達しており、まさに世界最大のスポーツです。データが示す通り、ワールドカップで優勝を争うような強豪国（アルゼンチン、ブラジル、欧州各国）は、以下のような共通の土壌を持っています。</p>
                 <ul>
                     <li>国民の半数以上が日常的にサッカーを追いかける高い関心度</li>
                     <li>毎週末に4万人以上を動員する、自国リーグの強固なエンタメ基盤</li>
