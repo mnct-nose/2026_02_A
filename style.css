@@ -1,0 +1,235 @@
+/* ==========================================================================
+   1. Reset & Base Settings
+   ========================================================================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans JP", sans-serif;
+    background-color: #fcfcf9; /* ほんのり温かみのあるオフホワイト */
+    color: #2b2d42; /* 完全な黒を避けた深いグレー */
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ==========================================================================
+   2. Header Design
+   ========================================================================== */
+.site-header {
+    background-color: #1b4332; /* 深いスタジアムグリーン */
+    color: #ffffff;
+    padding: 80px 0 60px 0;
+    border-bottom: 4px solid #40916c;
+}
+
+.site-header .subtitle {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #b7e4c7;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.site-header h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.site-header .lead {
+    font-size: 1.1rem;
+    color: #d8f3dc;
+    max-width: 700px;
+}
+
+/* ==========================================================================
+   3. Main Content
+   ========================================================================== */
+main {
+    padding-top: 60px;
+    padding-bottom: 160px;
+}
+
+.data-section {
+    margin-bottom: 70px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1b4332;
+    margin-bottom: 12px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #1b4332;
+}
+
+.section-desc {
+    font-size: 1rem;
+    color: #5c677d;
+    margin-bottom: 30px;
+}
+
+/* Table Style */
+.table-wrapper {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    margin-bottom: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 16px 24px;
+    font-size: 0.95rem;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #495057;
+    border-bottom: 1px solid #e9ecef;
+}
+
+/* 偶数行の背景色を変えて読みやすく */
+tbody tr:nth-child(even) {
+    background-color: #fbfbfb;
+}
+
+tbody tr {
+    border-bottom: 1px solid #f1f3f5;
+}
+
+.caption {
+    font-size: 0.85rem;
+    color: #747d8c;
+    line-height: 1.5;
+}
+
+/* Grid & Cards Style */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.card h3 {
+    font-size: 1rem;
+    color: #2b2d42;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.card .stat {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #40916c;
+    margin-bottom: 8px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.card .card-desc {
+    font-size: 0.85rem;
+    color: #6c757d;
+    line-height: 1.5;
+}
+
+/* Summary Section */
+.summary-section {
+    background-color: #f4f6f4;
+    border-radius: 12px;
+    padding: 40px;
+    border-left: 5px solid #1b4332;
+}
+
+.summary-section h2 {
+    margin-bottom: 20px;
+}
+
+.summary-section h2::after {
+    display: none;
+}
+
+.summary-content p {
+    margin-bottom: 16px;
+}
+
+.summary-content ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.summary-content li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   4. Footer Design
+   ========================================================================== */
+.site-footer {
+    background-color: #2b2d42;
+    color: #adb5bd;
+    padding: 60px 0;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+/* レスポンシブ対応（スマホ表示） */
+@media (max-width: 600px) {
+    .site-header {
+        padding: 50px 0 40px 0;
+    }
+    .site-header h1 {
+        font-size: 1.8rem;
+    }
+    th, td {
+        padding: 12px 16px;
+        font-size: 0.85rem;
+    }
+    .summary-section {
+        padding: 24px;
+    }
+}
